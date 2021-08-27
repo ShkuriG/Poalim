@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <%- include('./partials/head.ejs'); %>
+      </head>
+      <body>
+        <header>
+          <%- include('./partials/navbar.ejs'); %>
+        </header>
+        <!-- <main>
+          <div class="row">
+            <div class="col-sm-2">
+                <div class="well">
+                </div>
+              </div>
+            
+            <div class="col-sm-8">
+              <div class="container">       
+    <table border="1">
+        <thead>
+            <tr><td>Name</td><td>Current Code</td><td>ID</td></tr>
+        </thead>
+        <% for(var user of data) { %>
+            <tr>
+                <td><%= user.name%></td>
+                <td><%=user.current_code %></td>
+                <td><%=user.id %></td>
+            </tr>
+        <% } %>
+        </table>
+    </div>
+</div>
+
+<div class="col-sm-2">
+    <div class="well">
+    </div>
+  </div>
+</div>
+</main>
+    </body> -->
+
+    <main>
+        <div class="row">
+            <div class="col-sm-2"></div>
+        
+            <div class="col-sm-8">
+            <div class="container">         
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Current Code</th>
+                                <th scope="col">Old Code</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(var user of data) { %>
+                                <tr>
+                                    <th scope="row">
+                                        <%=user.name%>
+                                        <td><%=user.current_code %></td>
+                                        <td>
+                                            <% for(var oldp of user.old_pass) { %>
+                                            <%=oldp.pass%>, 
+                                            <% } %>
+                                        </td> 
+                                    </th>
+                                </tr>
+                            <% } %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </main>
+    </body>
+</html>

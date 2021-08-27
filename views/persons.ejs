@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <%- include('./partials/head.ejs'); %>
+      </head>
+      <body>
+      <header>
+        <%- include('./partials/navbar.ejs'); %>
+      </header>
+    <main>
+        <div class="row">
+            <div class="col-sm-2"></div>
+        
+            <div class="col-sm-8">
+            <div class="container">         
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Age</th>
+                                <th scope="col">City</th> 
+                                <th scope="col">Street</th>
+                                <th scope="col">Number</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(var per of data) { %>
+                                <% for(var add of per.address) { %>
+                                <tr>
+                                    <th scope="row">
+                                        <%=per.name%>
+                                        <td><%=per.age %></td>
+                                        <td><%=add.city%></td> 
+                                        <td><%=add.street%></td>
+                                        <td><%=add.number%></td>
+                            </th>
+                                </tr>
+                            <% } %>
+                            <% } %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </main>
+    </body>
+</html>

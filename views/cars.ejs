@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <%- include('./partials/head.ejs'); %>
+      </head>
+    <body>
+        <header>
+          <%- include('./partials/navbar.ejs'); %>
+        </header>
+    <main>
+        <div class="row">
+            <div class="col-sm-2"></div>
+        
+            <div class="col-sm-8">
+            <div class="container">         
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">Model</th>
+                                <th scope="col">Year</th>
+                                <th scope="col">Owners</th> 
+                                <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(var car of data) { %>
+                                <% for(var bought of car.buyers) { %>
+                                <tr>
+                                    <th scope="row">
+                                        <%= car.type%>
+                                        <td><%=car.year%></td>
+                                        <td><%= bought.name%></td> 
+                                        <td><%=bought.price%></td>
+                            </th>
+                                </tr>
+                            <% } %>
+                            <% } %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/"><img src="images/brandlogo.png" class="logoimg img-responsive"></a>
+    <ul class="navbar-nav mr-auto">
+      <!-- <li class="nav-item"> -->
+        <li <% if(title=="index"){%>class="nav-item active"<%}%>>
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li <% if(title=="persons"){%>class="nav-item active"<%}%>>
+        <a class="nav-link" href="/persons">Persons</a>
+      </li>
+      <li <% if(title=="users"){%>class="nav-item active"<%}%>>
+        <a class="nav-link" href="/users">Users</a>
+      </li>
+      <li <% if(title=="cars"){%>class="nav-item active"<%}%>>
+        <a class="nav-link" href="/cars">Cars</a>
+      </li>
+      <li <% if(title=="apartments"){%>class="nav-item active"<%}%>>
+        <a class="nav-link" href="/apartments">Apartments</a>
+      </li>
+    </ul>
+  </nav>

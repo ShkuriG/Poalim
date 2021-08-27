@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "6128b5abc7dfd84e8a3fc722"
+  },
+  "type": "Mazda",
+  "year": 2011,
+  "buyers": [
+    {
+      "name": "Avi",
+      "price": 10000
+    },
+    {
+      "name": "Dana",
+      "price": 20000
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6128b5e2c7dfd84e8a3fc757"
+  },
+  "type": "Honda",
+  "year": 2021,
+  "buyers": [
+    {
+      "name": "Dana",
+      "price": 30000
+    },
+    {
+      "name": "Moshe",
+      "price": 40000
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6128b5fbc7dfd84e8a3fc76b"
+  },
+  "type": "Toyota",
+  "year": 2019,
+  "buyers": [
+    {
+      "name": "Moshe",
+      "price": 50000
+    },
+    {
+      "name": "Avi",
+      "price": 60000
+    }
+  ]
+}]

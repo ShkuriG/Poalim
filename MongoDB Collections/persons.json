@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "5eb038fa0ab8c612e2801e3d"
+  },
+  "name": "Avi",
+  "age": 21,
+  "address": [
+    {
+      "city": "Tel aviv",
+      "street": "Hertzel",
+      "number": 31
+    },
+    {
+      "city": "Hadera",
+      "street": "52 st",
+      "number": 55
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5eb039220ab8c612e2801e44"
+  },
+  "name": "Dana",
+  "age": 31,
+  "address": [
+    {
+      "city": "Petach Tiqva",
+      "street": "Etzel",
+      "number": 56
+    },
+    {
+      "city": "Hod Hasharon",
+      "street": "Atzmaoot",
+      "number": 77
+    },
+    {
+      "city": "Natanya",
+      "street": "Hayotzer",
+      "number": 98
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5eb0394c0ab8c612e2801e4d"
+  },
+  "name": "Moshe",
+  "age": 54,
+  "address": [
+    {
+      "city": "Hod Hasharon",
+      "street": "Atzmaoot",
+      "number": 77
+    }
+  ]
+}]

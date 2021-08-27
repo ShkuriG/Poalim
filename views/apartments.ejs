@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <%- include('./partials/head.ejs'); %>
+    </head>
+    <body>
+        <header>
+          <%- include('./partials/navbar.ejs'); %>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-sm-2"></div>
+            
+                <div class="col-sm-8">
+                <div class="container">         
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Rooms</th>
+                                    <th scope="col">Floor</th>
+                                    <th scope="col">Owners</th> 
+                                    <th scope="col">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for(var apa of data) { %>
+                                    <% for(var bought of apa.buyers) { %>
+                                    <tr>
+                                        <th scope="row">
+                                            <%= apa.rooms%>
+                                            <td><%=apa.floor %></td>
+                                            <td><%= bought.name%></td> 
+                                            <td><%=bought.amount%></td>
+                                </th>
+                                    </tr>
+                                <% } %>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-sm-2"></div>
+            </div>
+        </main>
+    </body>
+</html>

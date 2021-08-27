@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "6128b5abc7dfd84e8a3fc722"
+  },
+  "rooms": 3,
+  "floor": 5,
+  "buyers": [
+    {
+      "name": "Avi",
+      "amount": 1
+    },
+    {
+      "name": "Dana",
+      "amount": 3
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6128b5e2c7dfd84e8a3fc757"
+  },
+  "rooms": 6,
+  "floor": 17,
+  "buyers": [
+    {
+      "name": "Moshe",
+      "amount": 1
+    },
+    {
+      "name": "Avi",
+      "amount": 6
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6128b5fbc7dfd84e8a3fc76b"
+  },
+  "rooms": 5,
+  "floor": 7,
+  "buyers": [
+    {
+      "name": "Dana",
+      "amount": 10
+    },
+    {
+      "name": "Moshe",
+      "amount": 1
+    }
+  ]
+}]
